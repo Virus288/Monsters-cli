@@ -13,3 +13,13 @@ export class MissingProcessPlatformError extends FullError {
     this.status = 500;
   }
 }
+
+export class MissingSourceFileError extends FullError {
+  constructor() {
+    super('MissingSourceFileError');
+    this.message = 'SourceFile is missing';
+    this.name = 'MissingSourceFileError';
+    this.code = '002';
+    this.status = 400;
+  }
+}
